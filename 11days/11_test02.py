@@ -40,14 +40,17 @@ if __name__ == '__main__':
     #creo contadores
     avance_col = 0
     avance_row = 0
+    sumatoria = [] # este es para la suma
+
     while avance_row < 4:
 
         # tengo que devolver la sumatoria mas alta de los hourglass
-        sumatoria_mas_alta = my_hourglass(avance_col, avance_row)
-        
+        sumatoria.append(my_hourglass(avance_col, avance_row))
+
         avance_col += 1
         if avance_col == 4:
             avance_col = 0
             avance_row +=1
     
+    print(max(sumatoria)) # funcion max() para devolver el mas alto
 
