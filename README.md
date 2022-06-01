@@ -1,6 +1,4 @@
-
-desafio 11:
-script que funciona: es el 11_test02.py
-
-porcentaje:
-corre en: porcentaje_02.py
+desafio n° 
+- 11: funciona ok
+- 12: funciona ok
+- 13: funciona ok

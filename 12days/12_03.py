@@ -20,9 +20,7 @@ class Student(Person):
     #
     # Write your constructor here
     def __init__(self, firstName, lastName, idNumber, scores):
-        self.firstName = firstName
-        self.lastName = lastName
-        self.idNumber = idNumber
+        super().__init__(firstName, lastName, idNumber)
         self.scores = scores
         self.average = round(statistics.mean(scores))
 
