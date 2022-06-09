@@ -14,23 +14,27 @@ class Difference:
         listado_diferencias = []
 
         # a = [1,2,5]
-        for i in a:
+        for i in self.__elements:
             # if resultado < (a[1+c] - a[0+f]):
-                listado_diferencias.append(a[1+c] - a[0+f])
+                listado_diferencias.append(self.__elements[1+c] - self.__elements[0+f])
                 c+=1
-                if c == (len(a)-1):
+                if c == (len(self.__elements)-1):
                     f+=1
                     c-=1
-            # else:
-              #   return resultado
-        print(f"listado es: {listado_diferencias}")
+
+        for e in listado_diferencias.sort(): # <-- ordeno la lista
+            self.maximumDifference = e # asigno el valor mas alto
+        
+        # print(f"listado es: {listado_diferencias}")
+        # print(f"maximinDifference: {self.maximumDifference}")
+
         # return listado_diferencias
 
         # ir guardando los resultados
         # devolver el mas alto
-    def add_maximumDifference(self, maximumDifference):
-        b = self.computeDifference().sort()
-        print(f"maximo: {maximumDifference}")
+    # def add_maximumDifference(self, maximumDifference):
+        # b = self.computeDifference().sort()
+        # print(f"maximo: {maximumDifference}")
         # self.maximumDifference = b[len(b)-1]
         # return b[len(b)-1] 
     
